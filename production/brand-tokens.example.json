@@ -1,0 +1,334 @@
+{
+  "_meta": {
+    "brand": "REPLACE_ME",
+    "source": "REPLACE_ME",
+    "version": "REPLACE_ME"
+  },
+  "colors": {
+    "primary": {
+      "red": "#000000",
+      "cream": "#000000",
+      "burgundy": "#000000",
+      "mustard": "#000000"
+    },
+    "extended": {
+      "deep_maroon": "#000000",
+      "warm_coral": "#000000",
+      "light_blue": "#000000",
+      "pale_lemon": "#000000",
+      "vivid_green": "#000000",
+      "royal_blue": "#000000",
+      "ink_dark": "#000000"
+    },
+    "usage_ratio": {
+      "red": 0.2,
+      "cream": 0.15,
+      "burgundy": 0.1,
+      "mustard": 0.1,
+      "warm_coral": 0.1,
+      "rest": 0.35
+    },
+    "rgb_for_figma": {
+      "red": {
+        "r": 0.796,
+        "g": 0.0,
+        "b": 0.2039
+      },
+      "cream": {
+        "r": 1.0,
+        "g": 0.9921,
+        "b": 0.8196
+      },
+      "burgundy": {
+        "r": 0.4784,
+        "g": 0.1215,
+        "b": 0.0784
+      },
+      "mustard": {
+        "r": 0.902,
+        "g": 0.6549,
+        "b": 0.2078
+      },
+      "deep_maroon": {
+        "r": 0.345,
+        "g": 0.0,
+        "b": 0.0902
+      },
+      "warm_coral": {
+        "r": 0.9529,
+        "g": 0.4235,
+        "b": 0.3019
+      },
+      "light_blue": {
+        "r": 0.8,
+        "g": 0.9294,
+        "b": 0.996
+      },
+      "pale_lemon": {
+        "r": 1.0,
+        "g": 0.9647,
+        "b": 0.8117
+      },
+      "vivid_green": {
+        "r": 0.0,
+        "g": 0.6627,
+        "b": 0.2941
+      },
+      "royal_blue": {
+        "r": 0.2,
+        "g": 0.2431,
+        "b": 0.9215
+      },
+      "ink_dark": {
+        "r": 0.1019,
+        "g": 0.1019,
+        "b": 0.1019
+      }
+    }
+  },
+  "typography": {
+    "fonts_used_in_figma": {
+      "display": {
+        "family": "REPLACE_ME",
+        "style": "REPLACE_ME",
+        "note": "REPLACE_ME"
+      },
+      "primary": {
+        "family": "REPLACE_ME",
+        "style": "REPLACE_ME",
+        "note": "REPLACE_ME"
+      },
+      "secondary": {
+        "family": "REPLACE_ME",
+        "style": "REPLACE_ME"
+      }
+    },
+    "scale_1080x1350": {
+      "eyebrow": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 22,
+        "lineHeightPct": 120,
+        "letterSpacingPct": 14,
+        "case": "REPLACE_ME"
+      },
+      "hero": {
+        "font": "REPLACE_ME",
+        "size_px": 138,
+        "lineHeightPct": 92,
+        "letterSpacingPct": -2.5,
+        "case": "REPLACE_ME"
+      },
+      "headline": {
+        "font": "REPLACE_ME",
+        "size_px": 96,
+        "lineHeightPct": 95,
+        "letterSpacingPct": -2,
+        "case": "REPLACE_ME"
+      },
+      "origin_headline": {
+        "font": "REPLACE_ME",
+        "size_px": 80,
+        "lineHeightPct": 95,
+        "letterSpacingPct": -2.5,
+        "case": "REPLACE_ME",
+        "note": "REPLACE_ME"
+      },
+      "subhead": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 38,
+        "lineHeightPct": 105,
+        "letterSpacingPct": -1,
+        "case": "REPLACE_ME"
+      },
+      "body_lg": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 26,
+        "lineHeightPct": 145,
+        "letterSpacingPct": 0,
+        "case": "REPLACE_ME"
+      },
+      "body": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 22,
+        "lineHeightPct": 150,
+        "letterSpacingPct": 0,
+        "case": "REPLACE_ME"
+      },
+      "caption": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 18,
+        "lineHeightPct": 120,
+        "letterSpacingPct": 10,
+        "case": "REPLACE_ME"
+      },
+      "stat": {
+        "font": "REPLACE_ME",
+        "size_px": 280,
+        "lineHeightPct": 85,
+        "letterSpacingPct": -4,
+        "case": "REPLACE_ME"
+      },
+      "stat_unit": {
+        "font": "REPLACE_ME",
+        "size_px": 96,
+        "lineHeightPct": 85,
+        "letterSpacingPct": -4,
+        "case": "REPLACE_ME"
+      },
+      "page_meta": {
+        "font": "REPLACE_ME",
+        "weight": "REPLACE_ME",
+        "size_px": 20,
+        "lineHeightPct": 120,
+        "letterSpacingPct": 5,
+        "case": "REPLACE_ME"
+      }
+    },
+    "rules": {
+      "case": "REPLACE_ME",
+      "alignment": "REPLACE_ME",
+      "hero_color_split": "REPLACE_ME",
+      "spelling": "REPLACE_ME",
+      "letter_spacing_units": "REPLACE_ME"
+    }
+  },
+  "grid": {
+    "size_px": [
+      1080,
+      1350
+    ],
+    "margin_px": 72,
+    "columns": 9,
+    "gutter_px": 20,
+    "rows": 12,
+    "row_height_px": 96
+  },
+  "chrome": {
+    "logo": {
+      "src_red_transparent_png": "REPLACE_ME",
+      "size_px": 70,
+      "x_px": 72,
+      "y_px": 60,
+      "wordmark_text": "REPLACE_ME",
+      "wordmark_font": "REPLACE_ME",
+      "wordmark_size_px": 56,
+      "wordmark_x_px": 156,
+      "wordmark_letterSpacingPct": -4
+    },
+    "page_counter": {
+      "format": "REPLACE_ME",
+      "x_from_right_px": 72,
+      "y_px": 72,
+      "style": "REPLACE_ME",
+      "align": "REPLACE_ME"
+    },
+    "footer": {
+      "y_from_bottom_px": 56,
+      "left_text": "REPLACE_ME",
+      "right_text_default": "REPLACE_ME",
+      "right_text_last_slide": "REPLACE_ME",
+      "style": "REPLACE_ME"
+    }
+  },
+  "voice": {
+    "archetype": "REPLACE_ME",
+    "pillars": [
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME"
+    ],
+    "tone": [
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME"
+    ],
+    "do": [
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME"
+    ],
+    "dont": [
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME",
+      "REPLACE_ME"
+    ]
+  },
+  "products": {
+    "product_line_a": {
+      "category": "REPLACE_ME",
+      "pack_size_g": 75,
+      "protein_g_per_100g": 55,
+      "shelf_life_days": null,
+      "skus": {
+        "sku_flavour_1": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "smoked_pink_salt": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "sour_cream_onion": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "lemon_pepper": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "sku_heritage_4": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "sku_heat_2": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        },
+        "sku_heat_1": {
+          "name": "REPLACE_ME",
+          "tagline": "REPLACE_ME"
+        }
+      }
+    },
+    "product_line_b": {
+      "category": "REPLACE_ME",
+      "skus": {
+        "sku_heritage_1": {
+          "name": "REPLACE_ME",
+          "protein_g_per_100g": 29,
+          "tagline": "REPLACE_ME"
+        },
+        "sku_heritage_2": {
+          "name": "REPLACE_ME",
+          "protein_g_per_100g": 30,
+          "tagline": "REPLACE_ME"
+        },
+        "pepper_bites": {
+          "name": "REPLACE_ME",
+          "protein_g_per_100g": 30,
+          "tagline": "REPLACE_ME"
+        },
+        "sku_heritage_3": {
+          "name": "REPLACE_ME",
+          "protein_g_per_100g": 29,
+          "tagline": "REPLACE_ME"
+        }
+      }
+    }
+  }
+}

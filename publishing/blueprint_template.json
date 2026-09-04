@@ -1,0 +1,108 @@
+{
+  "_README": "Make.com blueprint for the LinkedIn Image Auto-Poster. Replace every <<PLACEHOLDER>>. Module IDs (1,3,4,5) and the {{1.`N`}} index references are LOAD-BEARING — do not renumber. sheetId is the real TAB name (often 'Untitled' for a CSV-converted Sheet, NOT 'Sheet1'). filter uses the column LETTER; all value mappers use the 0-based column INDEX in backticks.",
+  "flow": [
+    {
+      "id": 1,
+      "module": "google-sheets:filterRows",
+      "version": 2,
+      "parameters": { "__IMTCONN__": "<<SHEETS_CONNECTION_ID>>" },
+      "mapper": {
+        "mode": "map",
+        "limit": 1,
+        "filter": [[{ "a": "L", "b": "Approved", "o": "text:equal" }]],
+        "sheetId": "<<TAB_NAME e.g. Untitled>>",
+        "spreadsheetId": "<<SPREADSHEET_ID>>",
+        "tableFirstRow": "A1:N1",
+        "includesHeaders": true
+      },
+      "metadata": { "designer": { "x": 0, "y": 0 } }
+    },
+    {
+      "id": 3,
+      "module": "google-drive:getAFile",
+      "version": 4,
+      "parameters": { "__IMTCONN__": "<<DRIVE_CONNECTION_ID>>" },
+      "mapper": {
+        "file": "{{1.`7`}}",
+        "select": "map",
+        "formatDrawings": "image/jpeg",
+        "formatDocuments": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "formatSpreadsheets": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "formatPresentations": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      },
+      "metadata": { "designer": { "x": 300, "y": 0 } }
+    },
+    {
+      "id": 4,
+      "module": "linkedin:CreateCompanyImagePost",
+      "version": 2,
+      "parameters": { "__IMTCONN__": "<<LINKEDIN_CONNECTION_ID>>" },
+      "mapper": {
+        "data": "{{3.data}}",
+        "title": "{{1.`0`}} \u00b7 {{1.`5`}}",
+        "method": "upload",
+        "altText": "<<CLIENT>> LinkedIn post \u2014 {{1.`5`}}",
+        "content": "{{1.`8`}}\n\n{{1.`9`}}\n\n{{1.`10`}}",
+        "fileName": "{{1.`6`}}",
+        "visibility": "PUBLIC",
+        "organization": "urn:li:organization:<<ORG_ID>>"
+      },
+      "metadata": { "designer": { "x": 600, "y": 0 } }
+    },
+    {
+      "id": 5,
+      "module": "google-sheets:updateRow",
+      "version": 2,
+      "parameters": { "__IMTCONN__": "<<SHEETS_CONNECTION_ID>>" },
+      "mapper": {
+        "mode": "map",
+        "values": {
+          "0": "{{1.`0`}}",
+          "1": "{{1.`1`}}",
+          "2": "{{1.`2`}}",
+          "3": "{{1.`3`}}",
+          "4": "{{1.`4`}}",
+          "5": "{{1.`5`}}",
+          "6": "{{1.`6`}}",
+          "7": "{{1.`7`}}",
+          "8": "{{1.`8`}}",
+          "9": "{{1.`9`}}",
+          "10": "{{1.`10`}}",
+          "11": "Posted",
+          "12": "{{formatDate(now; \"YYYY-MM-DD HH:mm\"; \"<<TIMEZONE e.g. Asia/Kolkata>>\")}}",
+          "13": "https://www.linkedin.com/feed/update/{{4.id}}/"
+        },
+        "sheetId": "<<TAB_NAME e.g. Untitled>>",
+        "rowNumber": "{{1.`__ROW_NUMBER__`}}",
+        "spreadsheetId": "<<SPREADSHEET_ID>>",
+        "tableFirstRow": "A1:N1",
+        "includesHeaders": true,
+        "valueInputOption": "USER_ENTERED"
+      },
+      "metadata": { "designer": { "x": 900, "y": 0 } }
+    }
+  ],
+  "name": "<<CLIENT>> LinkedIn Auto-Poster (Pre-Approved Queue)",
+  "metadata": {
+    "instant": false,
+    "version": 1,
+    "designer": { "orphans": [] },
+    "scenario": {
+      "dlq": false,
+      "dataloss": false,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "roundtrips": 1,
+      "sequential": true,
+      "confidential": false,
+      "freshVariables": false,
+      "autoCommitTriggerLast": true
+    }
+  },
+  "scheduling": {
+    "type": "indefinitely",
+    "between": ["<<FIRST_RUN_ISO e.g. 2026-06-22T09:00:00.000+05:30>>", null],
+    "interval": 172800
+  },
+  "interface": { "input": [], "output": [] }
+}
